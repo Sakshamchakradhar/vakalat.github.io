@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center{
+    text-align: center;
+}
+
+img{
+    margin-bottom: 24px;
+}
+
+.imgsize{
+    width: 60%;
+    height: 80%;
+}
+
+#st-1.st-left {
+    left: 0px;
+    top: 20%;
+}
+
+.vision_heading{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: crimson;
+    text-align: center;
+    font-weight: bold;
+    margin: 8px 8px;
+
+}
+
+.vision{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-size: large;
+    padding: 15px;
+}
+
+.achievements{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-size: large;
+    padding: 15px;
+}
+
+.achievements_heading{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: crimson;
+    text-align: center;
+    font-weight: bold;
+    margin: 8px 8px;
+}
+
+.vision_part{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    background-color: beige;
+    box-shadow: 30px;
+    
+}
+
+.achievements_part{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    background-color: beige;
+    box-shadow: 30px;
+    
+}

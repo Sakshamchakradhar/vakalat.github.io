@@ -1,0 +1,167 @@
+.main {
+    background-image: url(images/GIF2.gif);
+    background-size: 100% auto;
+    z-index: 0;
+}
+
+h5 {
+    /*color: azure;*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -5px;
+}
+
+#heading {
+    display: flexbox;
+    /*color: azure; */
+    margin-left: 330px;
+    margin-top: -120px;
+    margin-bottom: 10px;
+}
+
+#heading > h1 {
+    font-size: 45px;
+    margin-left: -60px;
+}
+
+#heading > p {
+    font-size: 18px;
+    color: rgb(70, 146, 197);
+    margin-top: -15px;
+}
+
+.second {
+  font-size: 16px;
+  color: rgb(70, 146, 197);
+  margin-left: 45px;
+  margin-top: -10px;
+} 
+
+.wrapper {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+   
+  .card{
+    width: 220px;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    z-index: 1;
+   }
+   
+  .card-background{
+    background: linear-gradient(to bottom, rgb(172, 40, 40), lightcoral);
+    height: 100px;
+    width: 100%;
+   }
+  
+  .card-background1{
+    background: linear-gradient(to bottom, rgb(13, 13, 109), rgb(98, 98, 194));
+    height: 100px;
+    width: 100%;
+   }
+  
+  .card-background2{
+    background: linear-gradient(to bottom, rgb(7, 99, 38), rgb(29, 88, 59));
+    height: 100px;
+    width: 100%;
+   }
+   
+  .card-image{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 20px;
+    border: 3px solid white;
+   }
+   
+  .card-info {
+    margin-top: 20px;
+   }
+   
+  .card-info > h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    padding: 4px;
+    margin-top: 5px;
+    color: #009688; 
+   }
+   
+  .card-info > p {
+     margin-top: 2px;
+     margin-bottom: 10px;
+     color: grey;
+   }
+  
+   .card-button {
+    width: 100%;
+    height: 30px;
+   }
+
+   .stars {
+    margin-bottom: 2px;
+    margin-top: 2px;
+   }
+
+  .zero {
+    border: none;
+    padding: 4px; 
+    color: rgb(172, 53, 53);
+    background-color: indianred; 
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .one {
+    border: none;
+    padding: 4px; 
+    /* color: rgb(13, 13, 109);
+    background-color: rgb(98, 98, 194);  */
+    /* text-align: center; */
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .two {
+    border: none;
+    padding: 4px; 
+    color: rgb(7, 99, 38);
+    background-color: rgb(50, 133, 93); 
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  
+  .checked {
+    color: orange;
+  } 
+
+  .card:hover {
+    transform: translateY(20px);
+  }
+
+  /* .btn {
+    margin-top: 290px;
+    margin-left: 38%;
+  } */
+
+  .viewmore{
+    padding: 15px 40px;
+    background-color: #6465C2;
+    color: linear-gradient(to right, rgb(26, 58, 99), rgb(74, 123, 146) );
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    z-index: 1;
+  }

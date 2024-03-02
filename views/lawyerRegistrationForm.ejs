@@ -1,0 +1,150 @@
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="/stylesheets/LawyerRegistration.css">
+</head>
+
+<% layout('layouts/Boilerplate') %>
+
+    <div class="container">
+        <form action="/lawyerRegistrationForm" class="form-horizontal" role="form" name="regform" method="POST"
+            onsubmit="validateForm()">
+            <h2>Lawyer Registration</h2>
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">First Name<span class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="First Name" name="lawyer[FirstName]"
+                        class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="lastName" placeholder="Last Name" name="lawyer[LastName]"
+                        class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">Email<span class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="email" id="email" placeholder="Email" name="lawyer[Email]" class="form-control"
+                        name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label">Password<span class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="password" name="password" placeholder="Password" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label">Confirm Password<span
+                        class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="password" name="password2" placeholder="Password" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="birthDate" class="col-sm-3 control-label">Date of Birth<span
+                        class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="date" id="birthDate" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address" class="col-sm-3 control-label">Address<span class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="text" id="address" placeholder="Address" name="lawyer[Address]" class="form-control"
+                        autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="state" class="col-sm-3 control-label">State<span class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="text" id="state" placeholder="state" name="lawyer[State]" class="form-control"
+                        autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pincode" class="col-sm-3 control-label">Pin Code<span class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="text" id="pincode" placeholder="Pincode" name="lawyer[Pincode]" class="form-control"
+                        autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber" class="col-sm-3 control-label">Phone Number<span
+                        class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" name="lawyer[PhoneNumber]"
+                        class="form-control">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lawyertype" class="col-sm-3 control-label">Lawyer's Specialization in<span
+                        class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="lawyertype" id="lawyertype" placeholder="Lawyer's Specialization in"
+                        name="lawyer[Specialization]" class="form-control">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+
+
+                <label for="gender" class="control-label col-sm-3">Gender</label>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="radio-inline">
+                                <input type="radio" id="femaleRadio" value="Female">Female
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="radio-inline">
+                                <input type="radio" id="maleRadio" value="Male">Male
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.form-group -->
+
+            <div class="form-group">
+                <label for="experience" class="col-sm-3 control-label">Experience<span class="reqfield">*</span>
+                </label>
+                <div class="col-sm-9">
+                    <input type="number" id="experience" placeholder="Experience in Years" name="lawyer[Experience]"
+                        class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="image" class="col-sm-3 control-label">Image Url<span class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="text" id="image" placeholder="Enter Image Url" name="lawyer[Image]" class="form-control"
+                        autofocus>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="resume" class="col-sm-3 control-label">Resume Url<span class="reqfield">*</span></label>
+                <div class="col-sm-9">
+                    <input type="text" id="resume" placeholder="Enter Resume Url" name="lawyer[Resume]" class="form-control"
+                        autofocus>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <span class="help-block"> *Required fields</span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <input type="reset" class="btn btn-danger btn-block">
+        </form> <!-- /form -->
+    </div> <!-- ./container -->
+
+    <script src="/javascripts/LawyerRegistration.js"></script>

@@ -1,0 +1,162 @@
+<% layout('layouts/Boilerplate') %>
+
+<head>
+    <link rel='stylesheet' type='text/css' media='screen' href='/stylesheets/fundraising.css'>
+</head>
+
+    <section class="header header1">
+        <div class="text">
+            <p>"It's not how much we give but how much love we put into giving” – Mother Teresa</p>
+        </div>
+    </section>
+    <section class="why">
+        <h2>Why Your Donation is Important.</h2>
+        <p>Your donation will provide justice to those who could not afford lawyers to fight their cases.As Justice to
+            unjust is our moral duty. So by donating money you will indirectly provide them with justice and will
+            fulfill your moral duty. </p>
+
+    </section>
+
+    <section class="Modal">
+
+        <button id="myBtn">Donate</button>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <section id='form' class="form">
+                    <div class="container">
+                        <div class="title">Donate</div>
+                        <div class="content">
+                            <form action="#">
+                                <div class="user-details">
+                                    <div class="input-box">
+                                        <span class="details">Full Name</span>
+                                        <input type="text" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <span class="details">Username</span>
+                                        <input type="text" placeholder="Enter your username" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <span class="details">Email</span>
+                                        <input type="text" placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <span class="details">Phone Number</span>
+                                        <input type="text" placeholder="Enter your number" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <span class="details">Password</span>
+                                        <input type="text" placeholder="Enter your password" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <span class="details">Confirm Password</span>
+                                        <input type="text" placeholder="Confirm your password" required>
+                                    </div>
+                                </div>
+                                <div class="gender-details">
+                                    <input type="radio" name="gender" id="dot-1">
+                                    <input type="radio" name="gender" id="dot-2">
+                                    <input type="radio" name="gender" id="dot-3">
+                                    <span class="gender-title">Gender</span>
+                                    <div class="category">
+                                        <label for="dot-1">
+                                            <span class="dot one"></span>
+                                            <span class="gender">Male</span>
+                                        </label>
+                                        <label for="dot-2">
+                                            <span class="dot two"></span>
+                                            <span class="gender">Female</span>
+                                        </label>
+                                        <label for="dot-3">
+                                            <span class="dot three"></span>
+                                            <span class="gender">Prefer not to say</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <input type="submit" value="Donate">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+    </section>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <h2>Success Stories</h2>
+    <section class="success_stories">
+
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="/images/fundraising/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/images/fundraising/2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/images/fundraising/1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/images/fundraising/4.jpg" alt="">
+                </div>
+                <!--slide images end-->
+
+            </div>
+
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+
+        <script>
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+    </section>

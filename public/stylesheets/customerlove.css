@@ -1,0 +1,39 @@
+*{
+	padding: 0;
+	margin:0;
+	scroll-behavior: smooth;
+
+}
+h1{
+	text-align: center;
+	background-color: yellow;
+}
+.container{
+	margin: auto;
+    width: 80%;
+    border: 3px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px rgba(0,0,0,0.4);
+    z-index: 100;
+    background-color: white;
+}
+.img-container{
+	text-align: center;
+}
+.reasons{
+	display: inline-block ;
+	padding: 10px;
+	margin-left:25%;
+	z-index: 1;
+	width:400px;
+	height:188px;
+	
+}
+.reasons img{
+	border-radius: 50%;
+	width: 100px;
+
+}
+.reasons h2{
+	text-align: center;
+}

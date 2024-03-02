@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+</head>
+
+<body>
+
+    <form class="modal-content" action="/action_page.php">
+        <div class="container">
+
+            <h2><b>Email</b></h2>
+            <p>jankibala34@gmail.com</p>
+
+            <h2><b>Phone Number</b></h2>
+            <p>9784767678</p>
+
+            <div class="clearfix">
+                <button type="button" onclick="document.style.display='none'" class="callbtn">Video Call</button>
+
+            </div>
+        </div>
+    </form>
+    <div class="video_chat" style="width:40vw">
+        <h2 class="left-align">Agora Video Web SDK Quickstart</h2>
+        <div class="row">
+            <div>
+                <button type="button" id="join">JOIN</button>
+                <button type="button" id="leave">LEAVE</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/javascripts/AgoraRTC_N-4.10.2.js"></script>
+<script type="module" src="/javascripts/agora.js"></script>
+
+</html>

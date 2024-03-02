@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.nav-fontsize{
+    font-size: 19px;
+}
+
+@media only screen and (min-width: 990px){
+    .img-logo{
+        display: none;
+    }
+    .loginsignmobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .header{
+        display: none;
+    }
+}
+
+li:hover{
+    color: red;
+
+}
+
+.button-position{
+    margin-top: 20px;
+}
+
+.one{
+    width: 100%;
+}
+
+.wow{
+    position: relative;
+    font-weight: bold;
+    animation: mymove 5s linear infinite;
+    font-size: 35px;
+}
+@keyframes mymove {
+
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 55%;
+    }
+}
+
+.img-size{
+    width:100px; 
+    height:80px; 
+    margin-left: 13px;
+    border-radius: 50px
+}
+
+.loginsignbutton{
+    right: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+.loginsignmobile{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+
+.button-margin{
+    margin: 10px;
+}
